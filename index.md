@@ -1,4 +1,7 @@
 ---
-title: Welcome to my blog
+layout: page
+title: "Welcome to my"
+permalink: /about/contact/
 ---
 
+Hello World!
