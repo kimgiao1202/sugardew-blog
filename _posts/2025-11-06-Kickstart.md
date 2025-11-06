@@ -1,6 +1,5 @@
 ---
-layout: post
-title: "hello"
+title: "YOUR-TITLE"
 date: 2025-11-06
 ---
 
