@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "POST-TITLE"
-date: 2025-11-06 00:00:00 -0000
+title: "hello"
+date: 2025-11-06
 ---
 
 <h1>Hello World!</h1>
