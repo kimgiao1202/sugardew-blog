@@ -3,4 +3,4 @@ title: "KICK-START"
 date: 2025-11-06
 ---
 
-<h1>{{ page.food }}</h1>
+<h1>Hello World!</h1>
