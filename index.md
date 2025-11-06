@@ -1,3 +1,5 @@
 layout: page
 title: "Welcome to my"
-permalink: /URL-PATH
+permalink: /about/contact/
+
+Hello World!
