@@ -1,0 +1,129 @@
+const blogData = [
+  {
+    date: "2020-03-16",
+    type: "Marketing",
+    sub_type: "Strategy",
+    title: "Boost your conversion rate",
+    picture: "/blog_pic/licensed-image.jfif",
+    description: "Illo sint voluptas. Error voluptates culpa eligendi...",
+    author: {
+      name: "Michael Foster",
+      role: "Co-Founder / CTO",
+      avatar:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
+  {
+    date: "2020-03-16",
+    type: "Marketing",
+    sub_type: "Strategy",
+    title: "Boost your conversion rate",
+    picture: "/blog_pic/licensed-image.jfif",
+    description: "Illo sint voluptas. Error voluptates culpa eligendi...",
+    author: {
+      name: "Michael Foster",
+      role: "Co-Founder / CTO",
+      avatar:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
+];
+
+function createBlogHTML(item) {
+  return `
+  <article class="flex max-w-xl flex-col items-start justify-between">
+    <div class="flex items-center gap-x-4 text-xs">
+      <time datetime="2020-03-16" class="text-gray-500">
+        ${item.date}
+      </time>
+      <a
+        href="#"
+        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+      >
+        ${item.type}
+      </a>
+    </div>
+    <div class="group relative grow">
+      <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+        <a>
+          <span class="absolute inset-0"></span>${item.title}
+          <img
+            src="/blog_pic/licensed-image.jfif"
+            alt="Blog image"
+            class="mt-3 mtnt-semibold text-gray-900 group-hover:text-gray-600"
+          />
+        </a>
+      </h3>
+      <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+        ${item.description}
+      </p>
+    </div>
+    <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+      <img
+        src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        alt=""
+        class="size-10 rounded-full bg-gray-50"
+      />
+      <div class="text-sm/6">
+        <p class="font-semibold text-gray-900">
+          <a href="#">
+            <span class="absolute inset-0"></span>${item.author.name}
+          </a>
+        </p>
+        <p class="text-gray-600">Co-Founder / CTO</p>
+      </div>
+    </div>
+  </article>
+`;
+}
+
+// const blogHTML = `
+//   <article class="flex max-w-xl flex-col items-start justify-between">
+//     <div class="flex items-center gap-x-4 text-xs">
+//       <time datetime="2020-03-16" class="text-gray-500">
+//         ${blogData.date}
+//       </time>
+//       <a
+//         href="#"
+//         class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+//       >
+//         ${blogData.type}
+//       </a>
+//     </div>
+//     <div class="group relative grow">
+//       <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+//         <a>
+//           <span class="absolute inset-0"></span>${blogData.title}
+//           <img
+//             src="/blog_pic/licensed-image.jfif"
+//             alt="Blog image"
+//             class="mt-3 mtnt-semibold text-gray-900 group-hover:text-gray-600"
+//           />
+//         </a>
+//       </h3>
+//       <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+//         ${blogData.description}
+//       </p>
+//     </div>
+//     <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+//       <img
+//         src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+//         alt=""
+//         class="size-10 rounded-full bg-gray-50"
+//       />
+//       <div class="text-sm/6">
+//         <p class="font-semibold text-gray-900">
+//           <a href="#">
+//             <span class="absolute inset-0"></span>${blogData.author.name}
+//           </a>
+//         </p>
+//         <p class="text-gray-600">Co-Founder / CTO</p>
+//       </div>
+//     </div>
+//   </article>
+// `;
+
+// document.getElementById("blog-section").innerHTML = blogHTML;
+
+const outputDiv = document.getElementById("blog-section");
+outputDiv.innerHTML = blogData.map(createBlogHTML).join("");
