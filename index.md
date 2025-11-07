@@ -4,4 +4,4 @@ title: "Welcome to my"
 permalink: /about/contact/
 ---
 
-Hello World!
+<h1>{{ page.food }}</h1>
