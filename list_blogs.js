@@ -48,7 +48,7 @@ function createBlogHTML(item) {
         <a>
           <span class="absolute inset-0"></span>${item.title}
           <img
-            src="/blog_pic/licensed-image.jfif"
+            src=${item.picture}
             alt="Blog image"
             class="mt-3 mtnt-semibold text-gray-900 group-hover:text-gray-600"
           />
