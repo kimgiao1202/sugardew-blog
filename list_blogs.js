@@ -4,7 +4,7 @@ const blogData = [
     type: "Marketing",
     sub_type: "Strategy",
     title: "Boost your conversion rate",
-    picture: "/blog_pic/licensed-image.jfif",
+    picture: "blog_pic/licensed-image.jfif",
     description: "Illo sint voluptas. Error voluptates culpa eligendi...",
     author: {
       name: "Michael Foster",
@@ -18,7 +18,7 @@ const blogData = [
     type: "Marketing",
     sub_type: "Strategy",
     title: "Boost your conversion rate",
-    picture: "/blog_pic/licensed-image.jfif",
+    picture: "blog_pic/licensed-image.jfif",
     description: "Illo sint voluptas. Error voluptates culpa eligendi...",
     author: {
       name: "Michael Foster",
